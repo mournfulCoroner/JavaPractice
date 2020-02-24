@@ -19,6 +19,11 @@ public class lab02 {
             if (ost <= a) {
                 sum -= 1000 * ost;
                 a2 = ost;
+                if(sum >=10 && sum<=90)
+                {
+                    a2--;
+                    sum+=1000;
+                }
             } else {
                 sum -= 1000 * a;
                 a2 = a;
@@ -29,10 +34,15 @@ public class lab02 {
                 ost = sum / 500;
                 if (ost <= b) {
                     sum -= 500 * ost;
-                    b2 = ost;
+                    b2 += ost;
+                    if(sum >=10 && sum<=90)
+                    {
+                        b2--;
+                        sum+=500;
+                    }
                 } else {
                     sum -= 500 * b;
-                    b2 = b;
+                    b2 += b;
                 }
                 if (sum == 0)
                     System.out.println("Понадобится " + a2 + " - 1000-х купюр, " + b2 + " - 500-х купюр, " + c2 + " - 100-х купюр и " + d2 + " - 30-х купюр");
@@ -40,10 +50,20 @@ public class lab02 {
                     ost = sum / 100;
                     if (ost <= c) {
                         sum -= 100 * ost;
-                        c2 = ost;
+                        if(sum == 10 ||  sum == 40 || sum == 70)
+                        {
+                            c2-=2;
+                            sum+=200;
+                        }
+                        if(sum == 20 || sum == 50 || sum == 80)
+                        {
+                            c2--;
+                            sum+=100;
+                        }
+                        c2 += ost;
                     } else {
                         sum -= 100 * c;
-                        c2 = c;
+                        c2 += c;
                     }
                     if (sum == 0)
                         System.out.println("Понадобится " + a2 + " - 1000-х купюр, " + b2 + " - 500-х купюр, " + c2 + " - 100-х купюр и " + d2 + " - 30-х купюр");
@@ -51,10 +71,11 @@ public class lab02 {
                         ost = sum / 30;
                         if (ost <= d) {
                             sum -= 30 * ost;
-                            d2 = ost;
-                        } else {
+                            d2 += ost;
+                        }
+                        else {
                             sum -= 30 * d;
-                            d2 = d;
+                            d2 += d;
                         }
                         if (sum == 0)
                             System.out.println("Понадобится " + a2 + " - 1000-х купюр, " + b2 + " - 500-х купюр, " + c2 + " - 100-х купюр и " + d2 + " - 30-х купюр");
