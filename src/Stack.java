@@ -23,7 +23,6 @@ public class Stack <Item> {
 
     public Item pop()
     {
-        if (top+1 <= size / 4) resize(size/ 2);
         return stackArray[top--];
     }
 
@@ -36,11 +35,6 @@ public class Stack <Item> {
     public Item showTop()
     {
         return stackArray[top];
-    }
-
-    public Item showPrevious()
-    {
-        return stackArray[top - 1];
     }
 
     public boolean isEmpty()
