@@ -39,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.lab01">
+  <component name="RunManager" selected="Application.lab03">
     <configuration name="lab01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab01" />
       <module name="JavaPractice" />
@@ -54,8 +54,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lab03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab03" />
+      <module name="JavaPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lab03" />
         <item itemvalue="Application.lab01" />
         <item itemvalue="Application.lab02" />
       </list>
@@ -86,16 +94,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lab01.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

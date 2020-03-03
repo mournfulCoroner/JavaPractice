@@ -9,12 +9,14 @@ public class Stack <Item> {
         stackArray = (Item[])new Object[size];
         top = -1;
     }
+
     public Stack()
     {
         size = 10;
         stackArray = (Item[])new Object[size];
         top = -1;
     }
+
     public void push(Item el)
     {
         if (top + 1 == size) resize(size * 2);
@@ -23,6 +25,7 @@ public class Stack <Item> {
 
     public Item pop()
     {
+        if (top+1 <= size / 4) resize(size / 2);
         return stackArray[top--];
     }
 
