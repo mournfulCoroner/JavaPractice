@@ -13,11 +13,10 @@ public class lab03 {
             default: return 0;
         }
     }
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        String input, output = "";
-        input = sc.nextLine();
+    public static String translate(String input)
+    {
         char n;
+        String output = "";
         Stack opz = new Stack(input.length());
         for(int i = 0; i < input.length(); i++)
         {
@@ -40,16 +39,16 @@ public class lab03 {
                         break;
                     case '*': case '/': case '+': case '-': case '^':
 
-                        while(!opz.isEmpty() && (getPriority(input.charAt(i)) <= getPriority((char)opz.showTop())))
-                        {
-                            output+=opz.showTop();
-                            opz.pop();
-                        }
-                        if(opz.isEmpty() || getPriority(input.charAt(i)) > getPriority((char)opz.showTop()) && !opz.isEmpty())
-                        {
-                            opz.push(input.charAt(i));
-                        }
-                        break;
+                    while(!opz.isEmpty() && (getPriority(input.charAt(i)) <= getPriority((char)opz.showTop())))
+                    {
+                        output+=opz.showTop();
+                        opz.pop();
+                    }
+                    if(opz.isEmpty() || getPriority(input.charAt(i)) > getPriority((char)opz.showTop()) && !opz.isEmpty())
+                    {
+                        opz.push(input.charAt(i));
+                    }
+                    break;
                     case ')':
                         while ((char)opz.showTop() != '(')
                         {
@@ -64,24 +63,28 @@ public class lab03 {
             output += (char) opz.showTop();
             opz.pop();
         }
+        return output;
+    }
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        String input, output = "";
+        input = sc.nextLine();
 
-        System.out.println(output);
+        output = translate(input);
 
         Stack calc = new Stack(output.length());
         int n1, n2, result = 0;
         String num = "";
         for(int i = 0; i < output.length(); i++)
         {
-            if(Character.isDigit(output.charAt(i))) {
-                while(Character.isDigit(output.charAt(i))){
-                    num+= output.charAt(i);
-                    if(i == output.length() - 1) break;
-                    i++;
+            if(Character.isDigit(output.charAt(i)))  num+= output.charAt(i);
+            else if(output.charAt(i) == ' ')
+            {
+                if(num!="") {
+                    calc.push(Integer.parseInt(num));
+                    num = "";
                 }
-                calc.push(Integer.parseInt(num));
-                num = "";
             }
-            else if(output.charAt(i) == ' ') continue;
             else
             {
                 n2 = (int)calc.pop();
