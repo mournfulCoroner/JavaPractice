@@ -25,6 +25,10 @@
   </component>
   <component name="ProjectId" id="1YCia75KHwzSJ1HeLyxBMYewOaF" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/jsoup-1.13.1.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -39,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.task2">
+  <component name="RunManager" selected="Application.true_lab03">
     <configuration name="lab01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab01" />
       <module name="JavaPractice" />
@@ -68,8 +72,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="true_lab03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="true_lab03" />
+      <module name="JavaPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.true_lab03" />
         <item itemvalue="Application.task2" />
         <item itemvalue="Application.lab03" />
         <item itemvalue="Application.lab01" />
@@ -102,16 +114,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/task2.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
