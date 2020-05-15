@@ -1,15 +1,10 @@
-import com.pengrad.telegrambot.Callback;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.*;
-import com.pengrad.telegrambot.request.BaseRequest;
-import com.pengrad.telegrambot.request.EditMessageText;
 import com.pengrad.telegrambot.request.SendMessage;
-import com.pengrad.telegrambot.request.SendPhoto;
-import com.pengrad.telegrambot.response.BaseResponse;
-import com.pengrad.telegrambot.response.SendResponse;
+
 
 import java.io.IOException;
 import java.util.List;
@@ -36,11 +31,12 @@ public class telegaBotMeow{
                             bot.execute(new SendMessage(chatId,"Не стоит благодарности, я всегда рад помочь юным волшебникам."));
                             continue;
                         default:
-                            if(rows.length <= 2 && rows.length != 0)
+                            if(rows.length <= 3 && rows.length != 0)
                             {
                                     Connection yay;
                                     if(rows.length == 1) yay = new Connection(rows[0]);
-                                    else yay = new Connection(rows[0] + "_" + rows[1]);
+                                    else if(rows.length == 3) yay = new Connection(rows[0] + "-" + rows[1] + "-" + rows[2]);
+                                    else yay = new Connection(rows[0] + "-" + rows[1]);
                                 bot.execute(new SendMessage(chatId,yay.get()).parseMode(parseMode));
                             }
                             else {
@@ -48,7 +44,6 @@ public class telegaBotMeow{
                             }
                             break;
                     }
-
             }
             return UpdatesListener.CONFIRMED_UPDATES_ALL;
         });

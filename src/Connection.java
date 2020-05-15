@@ -45,9 +45,7 @@ public class Connection {
             in.close();
 
             JSONObject jsonObject = new JSONObject(jsonLine);
-
             JSONArray list = (JSONArray) jsonObject.get("list");
-
 
             JSONObject item = (JSONObject) list.get(0);
 
@@ -61,7 +59,6 @@ public class Connection {
                     clouds.getString("description"), Math.round(wind.getDouble("speed")));
 
         } catch (IOException | JSONException e) {
-            //e.printStackTrace();
             return null;
         }
         return w;
