@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a33fbe4d-7156-43e4-9e1a-73ba5dd49fed" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,35 +23,22 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="ProjectId" id="1YCia75KHwzSJ1HeLyxBMYewOaF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/jsoup-1.13.1.jar!/" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.true_lab03">
+  <component name="RunManager" selected="Application.telegaBotMeow">
     <configuration name="lab01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab01" />
-      <module name="JavaPractice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lab02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab02" />
       <module name="JavaPractice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,6 +58,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="telegaBotMeow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="telegaBotMeow" />
+      <module name="JavaPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="true_lab03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="true_lab03" />
       <module name="JavaPractice" />
@@ -81,11 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.telegaBotMeow" />
         <item itemvalue="Application.true_lab03" />
         <item itemvalue="Application.task2" />
         <item itemvalue="Application.lab03" />
         <item itemvalue="Application.lab01" />
-        <item itemvalue="Application.lab02" />
       </list>
     </recent_temporary>
   </component>
@@ -114,5 +107,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1059" y="320" key="#com.intellij.ide.util.MemberChooser" timestamp="1588018992176">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1059" y="320" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1588018992176" />
+    <state x="1107" y="338" key="FileChooserDialogImpl" timestamp="1588889604700">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1107" y="338" key="FileChooserDialogImpl/0.0.1858.1080@0.0.1858.1080" timestamp="1588889604700" />
+    <state width="1815" height="202" key="GridCell.Tab.0.bottom" timestamp="1588034369214">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="202" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1588034369214" />
+    <state width="1815" height="202" key="GridCell.Tab.0.center" timestamp="1588034369214">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="202" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1588034369214" />
+    <state width="1815" height="202" key="GridCell.Tab.0.left" timestamp="1588034369213">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="202" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1588034369213" />
+    <state width="1815" height="202" key="GridCell.Tab.0.right" timestamp="1588034369214">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="202" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1588034369214" />
+    <state x="739" y="228" key="SettingsEditor" timestamp="1588028654944">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="739" y="228" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1588028654944" />
+    <state x="991" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1588889587117">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="991" y="355" key="com.intellij.ide.util.TipDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1588889587117" />
   </component>
 </project>
